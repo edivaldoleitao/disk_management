@@ -1,0 +1,57 @@
+body {
+    background-color: rgb(171, 159, 143);
+}
+
+table,td,th {
+    border: 1px black solid;
+    margin-right: 6PX;
+}
+
+.memorySet {
+    margin: 40px;
+    border: 1px solid black;
+    padding: 2px;
+}
+
+.arqCreate {
+    border: 2px solid black;
+    padding: 2px;
+    max-height: 150px;
+    max-width: 200px;
+    margin-right: 10px;
+}
+
+.folderCreate {
+    border: 2px solid black;
+    max-width: 200px;
+    padding: 2px;
+}
+
+.free {
+    background-color: aqua;
+}
+
+.used {
+    background-color: brown
+}
+
+.create {
+    display: flex;
+}
+
+
+.memorySet {
+    max-width: 290px;
+}
+
+.directory {
+    background-color: greenyellow;
+}
+
+.deleted {
+    background-color: white
+}
+
+.output {
+    display: flex;
+}

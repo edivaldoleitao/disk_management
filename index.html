@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador Arquivo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Simulador sistema de Arquivos - FAT (File Allocation Table)</h1>
+
+    <div class="create">
+        <div class="arqCreate">
+            <label for="idArqName">Nome Arquivo</label>
+            <input type="text" id="idArqName">
+            <label for="idArqSize">Tamanho Arquivo</label>
+            <input type="number" id="idArqSize" min="2">
+            <label for="idDiretorio">Diretório</label>
+            <input type="text" id="idDestiny" maxlength="30">
+            <input type="button" value="Create" onclick="createArq()">
+            
+        </div>
+        <div class="folderCreate">
+            <label for="">Nome Diretório</label>
+            <input type="text" id="idDirectory" >
+            <input type="button" value="Create" onclick="directoryCreate()"><br>
+            <input type="button" value="List" onclick="listDir()">
+        </div>
+    </div>
+    <div class="memorySet">
+        <label for="blockSize">Tamanho do Bloco</label><br>
+        <input type="number" id="blockSize" step="2" min="2" max="4"><br>
+        <label for="memSize">Tamanho da Mémoria</label><br>
+        <input type="number" step="2" min="16" id="memSize"><br>
+        <input type="button" value="Set" onclick="setMemory()">
+    </div>
+    <div class="output">
+        <table id="idFatTable">
+            <tr onclick="clicar()">                                                                                                                                
+                <th>Block</th>
+                <th>File Name</th>
+                <th>Next Block</th>
+                <th>State</th>
+            </tr>
+        </table>
+
+        <DIV>
+            <table id="idRaid3Table">
+                <tr>
+                    <th>DISK 0</th>
+                    <th>DISK 1</th>
+                    <th>DISK 2</th>
+                    <TH>DISK 3</TH>
+                </tr>
+            </table>
+        </DIV>
+    </div>
+
+    <script src="js/simulador.js"></script>
+</body>
+</html>
